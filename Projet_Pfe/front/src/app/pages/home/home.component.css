@@ -1,0 +1,204 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: webkit-body;
+  font-weight: normal;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #4F84CE;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #EF6622;
+  text-decoration: none;
+  transition: 0.2s ease-in-out all;
+}
+
+a:hover {
+  color: #2730BC;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 30px;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out all;
+}
+
+.btn-primary {
+  background-color: #336699;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #225588;
+}
+
+.btn-secondary {
+  background-color: #f2f2f2;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.btn-secondary:hover {
+  background-color: #ddd;
+}
+.section {
+  padding: 30px 0;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+}
+
+.section p {
+  margin-bottom: 10px;
+}
+
+.articles {
+  display: grid;
+  grid-gap: 18px;
+
+}
+
+.article {
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: rgba(243, 240, 235, 0.868);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.article img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+
+}
+
+.article h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.article p {
+  margin-bottom: 15px;
+}
+
+.article .btn {
+  margin-top: 10px;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.article:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+
+
+  .articles {
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+}
+/* Style pour la section de l'image en haut */
+.hero {
+  width: 100%;
+  position: relative;
+  top: 1px;
+  padding-top: 5px; /* Ajustez cette valeur selon vos besoins */
+  padding-bottom: 10px;  /*Ajustez cette valeur selon vos besoins */
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  width: 1030px; /* Ajuste la largeur de l'image à 100% du conteneur */
+  max-width: 1300px; /* Définit une taille maximale pour l'image */
+  left: 100px;
+  margin: 0 auto 0 17%; /* Ajoute une marge à droite pour déplacer l'image vers la droite */
+  display: flex;
+  align-items: center;
+}
+/* Style pour les articles */
+.articles {
+  display: flex;
+  justify-content: space-around; /* Ajustement pour répartir l'espace entre les articles */
+  flex-wrap: nowrap; /* Empêcher le passage à la ligne */
+  margin-top: 60px;
+}
+
+.article {
+  width: calc(33.33% - 20px); /* Ajustement de la largeur pour chaque article */
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.article:hover {
+  transform: translateY(-5px);
+}
+
+.article img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+  margin-bottom: 20px;
+}
+
+.article h2 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.6em;
+}
+
+.article p {
+  color: #666;
+}

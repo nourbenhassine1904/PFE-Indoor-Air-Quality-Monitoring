@@ -1,0 +1,127 @@
+
+<br>
+<div class="admin-page">
+  <section class="profile">
+    <div class="container">
+      <div class="profile-info">
+
+        <div class="user-details">
+
+  <div class="user-management">
+    <h2>Liste des Utilisateurs</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          
+          <th>Rôle</th>
+          <th>Nom</th>
+          <th>Prénom</th>
+          <th>Email</th>
+          <th>Numéro de téléphone</th>
+          <th>Date d'activation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users ; let i = index">
+          <td (click)="navigateToDetails(user.id)" style="cursor: pointer">{{ user.id }}</td>
+
+          
+          <td>
+            <input *ngIf="editMode[i]" [(ngModel)]="user.role" />
+            <span *ngIf="!editMode[i]">{{ user.role }}</span>
+          </td>
+          <td>
+            <input *ngIf="editMode[i]" [(ngModel)]="user.nom" />
+            <span *ngIf="!editMode[i]">{{ user.nom }}</span>
+          </td>
+          <td>
+            <input *ngIf="editMode[i]" [(ngModel)]="user.prenom" />
+            <span *ngIf="!editMode[i]">{{ user.prenom }}</span>
+          </td>
+          <td>
+            <input *ngIf="editMode[i]" [(ngModel)]="user.email" />
+            <span *ngIf="!editMode[i]">{{ user.email }}</span>
+          </td>
+          <td>
+            <input *ngIf="editMode[i]" [(ngModel)]="user.numero" />
+            <span *ngIf="!editMode[i]">{{ user.numero }}</span>
+          </td>
+
+          <td>
+            <input *ngIf="editMode[i]" [(ngModel)]="user.activation" />
+            <span *ngIf="!editMode[i]">{{ user.activation }}</span>
+          </td>
+
+
+         
+            
+            
+            
+            
+          
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Demandes d'Inscription</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          
+          <th>Rôle</th>
+          <th>Nom</th>
+          <th>Prénom</th>
+          <th>Email</th>
+          <th>Numéro de téléphone</th>
+          <th>Date de création</th>
+          <th>Actions</th>
+          
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let uti of utis ; let i = index">
+          <td >{{ uti.id }}</td>
+
+          
+          <td>
+            <input *ngIf="editMode[i]" [(ngModel)]="uti.role" />
+            <span *ngIf="!editMode[i]">{{ uti.role }}</span>
+          </td>
+          <td>
+            <input *ngIf="editMode[i]" [(ngModel)]="uti.nom" />
+            <span *ngIf="!editMode[i]">{{ uti.nom }}</span>
+          </td>
+          <td>
+            <input *ngIf="editMode[i]" [(ngModel)]="uti.prenom" />
+            <span *ngIf="!editMode[i]">{{ uti.prenom }}</span>
+          </td>
+          <td>
+            <input *ngIf="editMode[i]" [(ngModel)]="uti.email" />
+            <span *ngIf="!editMode[i]">{{ uti.email }}</span>
+          </td>
+          <td>
+            <input *ngIf="editMode[i]" [(ngModel)]="uti.numero" />
+            <span *ngIf="!editMode[i]">{{ uti.numero }}</span>
+          </td>
+          <td>
+            <input *ngIf="editMode[i]" [(ngModel)]="uti.creation" />
+            <span *ngIf="!editMode[i]">{{ uti.creation }}</span>
+          </td>
+
+          
+            <td>
+              <button class="btn-accept" (click)="accepterInscription(uti.id)">
+                <i class="material-icons"></i>Accepter
+              </button>
+              
+            </td>
+          
+
+        </tr>
+      </tbody>
+    </table>
+
+  

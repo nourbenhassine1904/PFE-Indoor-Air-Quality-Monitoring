@@ -1,0 +1,31 @@
+.active-link
+{
+  font-weight: bold;
+  
+
+
+}
+/* .navbar-light .navbar-nav .nav-link.active-link
+{
+  color: #5271FF;
+} */
+
+.input-group {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.input-group .form-control {
+  margin-right: 100px; /* Ajustez la valeur selon vos besoins */
+  margin-left: auto;
+}
+
+.navbar-brand img {
+  max-width: 100px; /* Définissez la largeur maximale souhaitée */
+  width :200px;
+  height: auto; /* Cela permet de conserver les proportions d'origine */
+  margin-left: 100;
+
+}
+

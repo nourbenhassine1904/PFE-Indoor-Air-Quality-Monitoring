@@ -1,0 +1,129 @@
+.active-link
+{
+  font-weight: bold;
+  
+
+
+}
+/* .navbar-light .navbar-nav .nav-link.active-link
+{
+  color: #5271FF;
+} */
+
+.input-group {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.input-group .form-control {
+  margin-right: 100px; /* Ajustez la valeur selon vos besoins */
+  margin-left: auto;
+}
+
+.navbar-brand img {
+  max-width: 100px; /* Définissez la largeur maximale souhaitée */
+  width :200px;
+  height: auto; /* Cela permet de conserver les proportions d'origine */
+  margin-left: 100;
+
+}
+
+.btn-choice{
+  width:150%;
+  padding: 0% 30%;
+  display: block;
+  transform: translate(-122px);
+}
+.navbar navbar-expand-lg bg-body-tertiary custom-navbar {
+  background-color: #FFFFFF; /* Remplacez cette couleur par la couleur que vous souhaitez */
+}
+
+
+/* Style pour le bouton de déconnexion */
+.logout-btn {
+color: #000000; /* Couleur du texte */
+background-color: #F1692A; /* Couleur de fond */
+border: none; /* Pas de bordure */
+padding: 2px 5px; /* Espacement interne */
+border-radius: 13px; /* Bordure arrondie */
+cursor: pointer; /* Curseur en main */
+}
+
+/* Style pour le bouton de déconnexion au survol */
+.logout-btn:hover {
+background-color: #c3c7cc; /* Changement de couleur de fond au survol */
+}
+
+.notification-icon {
+margin-left: 25px; /* Ajustez la marge selon vos besoins */
+padding: 12px; /* Ajustez la valeur selon votre préférence */
+border-radius: 50%; /* Assurez-vous d'utiliser un border-radius de 50% pour obtenir un cercle */
+}
+
+.notification-icon button {
+position: relative;
+font-size: 1rem; /* Ajustez la taille de la police selon votre préférence */
+padding: 18px; /* Ajustez le padding pour agrandir le bouton */
+
+}
+
+.notification-icon button .badge {
+position: absolute;
+top: -10px; /* Ajustez la position verticale selon vos besoins */
+right: -15px; /* Ajustez la position horizontale selon vos besoins */
+font-size: 0.90rem; /* Taille de la police du badge */
+padding: 0.35rem 0.5rem; /* Espace à l'intérieur du badge */
+border-radius: 50%; /* Pour rendre le badge rond */
+}
+
+/* Style pour le bouton de notification */
+.notification-icon button {
+font-size: 1.8rem; /* Taille de la police */
+padding: 8px 15px; /* Espacement intérieur */
+border-radius: 50%; /* Bordure arrondie pour créer un cercle */
+background-color: transparent; /* Fond transparent */
+color: #eea005; /* Couleur du texte */
+border: 2px solid #e1e5e716; /* Bordure */
+}
+
+
+
+/* Style pour la couleur de fond du badge */
+.notification-icon .badge bg-danger {
+background-color: #cd2525; /* Couleur rouge */
+}
+
+.notification-dropdown {
+position: absolute;
+top: 50px; /* Ajustez la position verticale selon vos besoins */
+right: 10px; /* Ajustez la position horizontale selon vos besoins */
+background-color: #fff;
+border: 1px solid #ccc;
+border-radius: 5px;
+padding: 10px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.notification-dropdown ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+.notification-dropdown ul li {
+padding: 5px 0;
+border-bottom: 1px solid #eee;
+}
+
+.notification-dropdown ul li:last-child {
+border-bottom: none;
+}
+.notification-list {
+list-style-type: none; /* Supprimer les puces de la liste */
+padding: 0; /* Supprimer le padding par défaut */
+}
+
+.notification-list li {
+margin-bottom: 10px; /* Espacement entre chaque notification */
+}

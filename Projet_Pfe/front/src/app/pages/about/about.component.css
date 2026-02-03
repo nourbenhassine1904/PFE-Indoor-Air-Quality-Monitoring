@@ -1,0 +1,264 @@
+.about h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #333;
+  font-size: 2.5em;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Style pour le contenu À Propos */
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.about-text {
+  flex: 1;
+  padding: 30px;
+  background-color: #eee8e8;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-text:hover {
+  transform: translateY(-5px);
+}
+
+.about-text h2 {
+  margin: 0 0 20px;
+  color: #303D5B;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.about-text p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Style pour les avantages */
+.benefits {
+  background-color: #eee8e8;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  margin-top: 60px;
+}
+
+.benefits h3 {
+  color: #303D5B;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+
+.benefits ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.benefits li {
+  color: #666;
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  position: relative;
+  padding-left: 0px;
+}
+
+h3{
+  color:#303D5B;
+  font-size: 2.5em;
+  font-weight: bold;
+
+}
+
+.benefits li::before {
+  content: '\2022';
+  color: #f26723;
+  position: relative;
+  left: 0;
+}
+
+/* Style pour l'équipe */
+.team {
+  background-color: #eee8e8;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  margin-top: 60px;
+}
+
+.team h3 {
+  color: #303D5B;
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  flex-basis: calc(50% - 20px);
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 40px;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.team-member h3 {
+  margin-top: 0;
+  color: #f26723;
+  font-size: 1.6em;
+}
+
+.team-member p {
+  color: #666;
+}
+
+/* Style pour l'appel à l'action */
+.cta {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.cta h3 {
+  color: #303D5B;
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  color: #666;
+  line-height: 1.6;
+}
+/* Style pour les membres de l'équipe */
+.team-member {
+  flex-basis: calc(50% - 20px);
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 40px;
+  text-align: center; /* Pour centrer le contenu */
+}
+
+.team-member img {
+  width: 150px; /* Ajustez la taille de l'image selon vos besoins */
+  height: 150px; /* Ajustez la taille de l'image selon vos besoins */
+  border-radius: 50%; /* Pour une forme circulaire */
+  margin-bottom: 20px;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.team-member h3 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.6em;
+}
+
+.team-member p {
+  color: #666;
+}
+
+/* Style pour la section des abonnements */
+.abonnements {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  margin-top: 60px;
+}
+
+.abonnements h1 {
+  color: #333;
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.abonnements-liste {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.abonnement {
+  flex-basis: calc(33.33% - 20px);
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.abonnement:hover {
+  transform: translateY(-5px);
+}
+
+.abonnement h2 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.6em;
+}
+
+.abonnement p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.abonnement ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.abonnement li {
+  color: #666;
+  font-size: 1em;
+  position: relative;
+  padding-left: 25px;
+}
+
+.abonnement li::before {
+  content: '\2022';
+  color: #007bff;
+  position: absolute;
+  left: 0;
+}
+
+.abonnement button {
+  background-color: #f2a31a;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.abonnement button:hover {
+  background-color: #225588;
+}

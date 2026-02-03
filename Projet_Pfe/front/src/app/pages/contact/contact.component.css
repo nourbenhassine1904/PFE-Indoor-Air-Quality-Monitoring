@@ -1,0 +1,278 @@
+/* Your existing CSS code for the "contact-us" section and other elements */
+
+.contact-form {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Your existing CSS code for the "contact-us" section and other elements */
+
+.contact-form {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #FF9000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #fac031;
+}
+
+/* Additional Styling */
+.contact-info {
+  background-color: #f4f4f4;
+  padding: 30px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.contact-info h3 {
+  color: #f26723;
+  text-decoration: underline;
+}
+
+.timsoft-contact {
+  background-color: #f4f4f4;
+  padding: 30px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.timsoft-contact h2 {
+  color: #007bff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-md-4 {
+  width: 30%;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .col-md-4 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-info, .form, .social-media {
+  margin-top: 30px;
+}
+
+.info, .form, .social-media {
+  padding: 20px;
+  background-color: #47b1f789;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #fa8f2b;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: #ff7b00;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.social-media ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-media ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-media ul li:last-child {
+  margin-right: 0;
+}
+
+.social-media a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  text-decoration: underline;
+}
+ /* //////////////////////////////// */
+
+/* Style pour la section de contact */
+
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: calc(1.375rem + 1.5vw);
+  color: #303D5B;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+/* Style pour les informations de contact */
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  
+  align-items: center;
+    align-content: center;
+    flex-direction: column
+}
+
+.info,
+.form {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.info:hover,
+.form:hover {
+  transform: translateY(-5px);
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.form textarea {
+  height: 120px;
+}
+
+.form button[type="submit"] {
+  background-color: #fca40cee;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 1.2em;
+}
+
+.form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+.notification {
+  background-color: #28a745; /* Couleur verte */
+  color: #fff; /* Texte blanc */
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  display: none; /* Par défaut, la notification est cachée */
+}

@@ -1,0 +1,116 @@
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 190px; /* Ajustez la valeur en fonction de la distance souhaitée */
+  margin-bottom: 180px; /* Ajustez la valeur en fonction de l'espace souhaité */
+}
+
+
+form {
+  width: 700px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: #F16723;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  color: #303D5B;
+  text-decoration: underline;
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #303D5B;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  
+  
+  transition: transform 0.3s ease;
+}
+
+
+
+
+
+.error-message {
+  color: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  background-color: #f4433675; /* Rouge */
+  text-align:center;
+}
+
+/* Style pour le bouton de fermeture */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+.success-message {
+  color: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  background-color: #629f1d7a; /* Rouge */
+  text-align:center;
+}
+
+/* Style pour le bouton de fermeture */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+

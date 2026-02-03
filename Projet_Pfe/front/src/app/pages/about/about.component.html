@@ -1,0 +1,63 @@
+<section class="about">
+  <div class="container">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>À Propos de Nous</h2>
+        <p>Hydatis est votre partenaire de confiance pour une meilleure qualité de l'air intérieur. Notre mission est de vous fournir les outils et les connaissances nécessaires pour respirer un air pur et sain, où que vous soyez.</p>
+        <p>Nos solutions innovantes et nos services personnalisés sont conçus pour répondre à vos besoins spécifiques en matière de qualité de l'air intérieur. Chez Hydatis, votre santé et votre bien-être sont notre priorité absolue.</p>
+      </div>
+    </div>
+
+    <!-- Section des abonnements -->
+    <div class="abonnements">
+      <h1>Liste des Abonnements</h1>
+      <div class="abonnements-liste">
+        <div class="abonnement" *ngFor="let abonnement of abonnements">
+          <h2>{{ abonnement.type }}</h2>
+          <p><strong>Prix :</strong> {{ abonnement.prix }} DT / année</p>
+          <p><strong>Avantages :</strong></p>
+          <ul>
+            <li *ngFor="let avantage of abonnement.avantages">{{ avantage }}</li>
+          </ul>
+          <p><strong>Paramètres :</strong></p>
+          <ul>
+            <li *ngFor="let parametres of abonnement.parametres">{{ parametres }}</li>
+          </ul>
+          <button type="submit"  (click)="showDetails()">Choisir</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="benefits">
+      <h3>Avantages de Travailler Avec Nous</h3>
+      <ul>
+        <li><i class="fas fa-check"></i> Solutions personnalisées pour chaque besoin</li>
+        <li><i class="fas fa-check"></i> Expertise et conseil professionnel</li>
+        <li><i class="fas fa-check"></i> Technologies de pointe pour une surveillance précise</li>
+        <li><i class="fas fa-check"></i> Service clientèle réactif et dévoué</li>
+      </ul>
+    </div>
+    <div class="team">
+      <h3>Rencontrez Notre Équipe</h3>
+      <div class="team-members">
+        <div class="team-member">
+          <img src="assets/imgs/x.png" alt="Membre 1">
+          <h3>Nour Ben Hassine</h3>
+          <p>Etudiante en IOT et systèmes embarqués</p>
+        </div>
+        <div class="team-member">
+          <img src="assets/imgs/y.png" alt="Membre 2">
+          <h3>Lamis Dridi</h3>
+          <p>Etudiante en IOT et systèmes embarqués</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta">
+      <h3>Prêt à Respirer un Air Plus Pur?</h3>
+      <p>Rejoignez-nous dès aujourd'hui et commencez votre voyage vers une meilleure qualité de vie.</p>
+    </div>
+  </div>
+</section>

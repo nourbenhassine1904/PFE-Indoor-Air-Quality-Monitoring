@@ -1,0 +1,49 @@
+
+<div class="error-message" *ngIf="errorMessage">
+  <span class="closebtn" (click)="errorMessage = '';">&times;</span>
+  <strong> {{ errorMessage }} :</strong>
+</div>
+
+
+
+<div *ngIf="!isLoggedIn">
+  <br><br>
+  <div class="main" id="main">
+    <div class="main_images">
+      <img src="assets/imgs/loginnn.png" class="image-accueil">
+    </div>
+  </div>
+
+<div class="login-container-parent">
+  
+  <div class="login-container">
+    <br><br><br> <br><br><br> <br><br>
+    <form (ngSubmit)="onSubmit()" [formGroup]="form">
+      <h1 style="color: #EF6622;">Bonjour cher utilisateur !</h1>
+      <p class="welcome-message">Bienvenue ! Veuillez saisir vos informations de connexion pour vous connecter.</p>
+      <label for="email" style="color: #4A69FC; text-decoration: underline;">Adresse e-mail :</label>
+      <input type="text" id="email" name="email" required placeholder="Entrez votre adresse e-mail, s'il vous plaît" formControlName="email">
+    
+      <label for="password" style="color: #4A69FC; text-decoration: underline;">Mot de passe :</label>
+      <input type="password" id="password" name="password" required placeholder="Entrez votre mot de passe, s'il vous plaît" formControlName="password">
+    
+      
+      <br><br>
+    
+      <button class="btn-signup-admin" type="submit">Soumettre</button>
+    
+    </form>
+    
+
+    <div class="signup">
+      <p>Nouvel utilisateur ?</p>
+      <div class="signup-buttons">
+        <button class="btn-signup-admin" (click)="goToSignUp()">Inscription</button>
+        <br>
+      </div>
+      <br><br>
+    </div>
+   
+  </div>
+</div>
+<br><br><br>

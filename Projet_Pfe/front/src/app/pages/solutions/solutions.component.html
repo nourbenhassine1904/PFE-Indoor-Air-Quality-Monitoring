@@ -1,0 +1,66 @@
+<br>
+<div class="container">
+    <h1>Entrez les paramètres pour prédire la qualité de l'air</h1>
+ 
+
+  <div class="content">
+    <div class="form-container">
+      <form (submit)="predictAirQuality()">
+        <div class="form-row">
+
+          <div class="form-group">
+            <label for="co2">CO2 (ppm):</label>
+            <input type="number" id="co2" name="co2" [(ngModel)]="co2Value" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="pressure">Pression (hPa):</label>
+            <input type="number" id="pressure" name="pressure" [(ngModel)]="pressionValue" required>
+          </div>
+
+          <div class="form-group">
+            <label for="humidity">Humidité (%):</label>
+            <input type="number" id="humidity" name="humidity" [(ngModel)]="humiditeValue" required>
+          </div>
+
+        </div>
+
+        <div class="form-row">
+
+          <div class="form-group">
+            <label for="o3">O3 (µg/m^3):</label>
+            <input type="number" id="o3" name="o3" [(ngModel)]="o3Value" required>
+          </div>
+
+          <div class="form-group">
+            <label for="temperature">Température (°C):</label>
+            <input type="number" id="temperature" name="temperature" [(ngModel)]="temperatureValue" required>
+          </div>
+
+          <div class="form-group">
+            <label for="no2">NO2 (µg/m^3):</label>
+            <input type="number" id="no2" name="no2" [(ngModel)]="no2Value" required>
+          </div>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Prédire la qualité de l'air</button>
+      </form>
+    </div>
+    <br>
+    <div *ngIf="prediction">
+      <h1>Résultat de la prédiction :</h1>
+
+      <div class="air-quality">
+        <h3>Niveau de la qualité de l'air actuel:</h3>
+        <p class="quality-level"> {{ prediction.air_quality }}</p>
+      </div>
+      
+      <div class="solution">
+      <h3>Solution proposée:</h3>
+      <p class="solution-text"> {{ prediction.solution }}</p>
+      <button type="button" class="btn btn-success" (click)="showDetails()">Accepter</button>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>

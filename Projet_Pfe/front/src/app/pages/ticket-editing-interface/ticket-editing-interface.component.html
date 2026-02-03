@@ -1,0 +1,85 @@
+<br>
+
+<div class="success-message" *ngIf="successMessage">
+  <!-- Close button for dismissing the error message -->
+  <span class="closebtn" (click)="successMessage = '';">&times;</span>
+  
+  <!-- Error message content -->
+  <strong> {{ successMessage }} </strong>
+</div>
+<h1>Bienvenue cher admin !</h1>
+<br>
+<p >Effectuez des modifications sur le profil du client afin de garantir l'exactitude des informations.<p>
+  
+  <div class="signup-container">
+        <form class="ticket-editing-form" [formGroup]="form">
+          
+            <label for="firstName">Nom de famille :</label>
+            <input type="text" id="firstName" name="firstName" formControlName="firstName">
+        
+            <label for="lastName">Prénom:</label>
+            <input type="text" id="lastName" name="lastName" formControlName="lastName">
+        
+          <label for="email">Adresse e-mail :</label>
+          <input type="email" id="email" name="email" formControlName="email">
+        
+          <label for="phoneNumber">Numéro de téléphone :</label>
+          <input type="text" id="phoneNumber" name="phoneNumber" formControlName="phoneNumber">
+        
+          <label for="housingType">Type d'habitation :</label>
+              <select id="housingType" name="housingType" formControlName="housingType">
+                  <option value="Appartement">Appartement</option>
+                  <option value="Maisson">Maison</option>
+                  <option value="Entreprise">Entreprise</option>
+                  <option value="Autre">Autre</option>
+              </select>
+
+          <label for="secteurActivite">Secteur d'activité :</label>
+            <select id="secteurActivite" name="secteurActivite" formControlName="secteurActivite">
+              <option value="SANTE_ET_BIEN_ETRE">Santé et bien-être</option>
+              <option value="EDUCATION">Éducation</option>
+              <option value="TECHNOLOGIE_DE_L_INFORMATION">Technologie de l'information</option>
+              <option value="INDUSTRIE_MANUFACTURIERE">Industrie manufacturière</option>
+              <option value="SERVICES_PROFESSIONNELS">Services professionnels</option>
+              <option value="IMMOBILIER">Immobilier</option>
+              <option value="COMMERCE_DE_DETAIL">Commerce de détail</option>
+              <option value="HOTELLERIE_ET_RESTAURATION">Hôtellerie et restauration</option>
+              <option value="AGRICULTURE">Agriculture</option>
+              <option value="ENVIRONNEMENT_ET_DEVELOPPEMENT_DURABLE">Environnement et développement durable</option>
+            </select>
+
+            <label for="companySize">Taille de l'entreprise :</label>
+                <select id="companySize" name="companySize" formControlName="companySize">
+                <option value="PETITE">Petite</option>
+                <option value="MOYENNE">Moyenne</option>
+                <option value="GRANDE">Grande</option>
+                </select>  
+      <br><br>
+              <div class="form-buttons">
+                <button class="btn-save" (click)="onSubmit();">Save</button>
+                
+              </div>
+        </form>
+</div>
+
+
+
+
+<!-- <div class="ticket-editing-interface">
+  <h2>Ticket Editing Interface</h2>
+  <div class="ticket-details">
+    <h3>Ticket ID: {{ ticket.id }}</h3>
+    <p>Type of Request: {{ ticket.typeOfRequest }}</p>
+    <p>Business Unit: {{ ticket.businessUnit }}</p>
+    <p>Time Taken: {{ ticket.timeTaken }}</p>
+    <p>Subject: {{ ticket.subject }}</p>
+    <p>Module: {{ ticket.module }}</p>
+    <p>Complexity: {{ ticket.complexity }}</p>
+    <p>Estimated Time: {{ ticket.estimatedTime }}</p>
+    <!-- Add more ticket details as per your requirements -->
+  <!-- </div>
+  <div class="buttons">
+    <button class="btn-save" (click)="saveTicket()">Save</button>
+    <button class="btn-cancel" (click)="cancelTicket()">Cancel</button>
+  </div>
+</div> -->

@@ -1,0 +1,23 @@
+
+<div class="dashboard-container">
+  <iframe title="dashboard11" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMTY1YzhiMjktOTRlMS00NGRlLTg3ZjAtNTE3OWU0MDI3NTlmIiwidCI6ImRiZDY2NjRkLTRlYjktNDZlYi05OWQ4LTVjNDNiYTE1M2M2MSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+  <div class="notifications-container">
+    <div *ngFor="let param of parameters; let i = index">
+      <div class="notification" *ngIf="param.show">
+          <div class="indicator" [style.background]="getColor(param.value, param.threshold)">
+              <i class="fa fa-exclamation-triangle" *ngIf="param.value > param.threshold"></i>
+          </div>
+          <div class="message">
+              <span class="param-name">{{ param.name }}</span>
+              <span class="param-value">{{ param.value }}</span>
+              <span class="param-status" [ngClass]="{'good': param.value <= param.threshold, 'bad': param.value > param.threshold}">
+                  {{ getStatusMessage(param.value, param.threshold) }}
+              </span>
+          </div>
+          <button class="details-button" (click)="showDetails(i)">Plus d'infos</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br>

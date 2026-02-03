@@ -1,0 +1,98 @@
+/* Style du conteneur principal */
+.dashboard-container {
+  display: flex; /* Disposition horizontale */
+  width: 100%; /* Largeur du conteneur */
+}
+
+/* Style du dashboard */
+iframe {
+  width: 1200px; /* Largeur du dashboard */
+  height: 610px; /* Hauteur du dashboard */
+  margin-top: 30px; /* Marge supérieure */
+}
+
+.notifications-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+.notification {
+  background-color: #fff;
+  color: #444;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+}
+
+.indicator {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.message {
+  flex: 1;
+}
+
+.param-name {
+  font-weight: bold;
+}
+
+.param-value {
+  margin-right: 10px;
+}
+
+.param-status {
+  font-size: 0.8em;
+}
+
+.good {
+  color: green;
+}
+
+.bad {
+  color: red;
+}
+
+.details-button {
+  margin-left: auto;
+  padding: 5px 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.notifications-container {
+  margin-top: 90px; /* Augmenter la valeur pour descendre les cadres */
+  margin-bottom: 20px; /* Diminuer la valeur pour rapprocher les cadres */
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: row; /* Arranges elements horizontally */
+}
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 800px 1fr; /* Defines column widths */
+}
+.details-button {
+  background-color: #EF6622;
+  color: #000000;
+  border: 1px solid #83e1f1;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 0.8em;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  /* Effet de survol */
+  &:hover {
+    background-color: #4F84CE;
+    color: #000000;
+  }
+}

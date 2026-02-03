@@ -1,0 +1,462 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+
+
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: Poppins !important;
+  list-style: none;
+  text-decoration: none;
+  font-size:18px;
+  
+
+}
+:root {
+  --primary-color:#0693e3;
+  --secondary-color:#f26723;
+  --bg-color:#ffffff;
+  --big-font:#000000;
+  --h2-font:2.25rem;
+  --p-font:0.9rem;
+
+}
+body {
+  font-family: Poppins !important;
+  margin: 0;
+  background: #FFFFFF;
+  line-height: 1.9;
+}
+
+
+
+.main {
+background-color: #FFFFFF;
+padding-top: 200px;
+text-align: center;
+color: #FFFFFF;
+}
+
+:root {
+    --main-color:#0693e;
+    --text-color:#f26723;
+    --bg-color:#92C7F0;
+    --big-font:#000000;
+    --h2-font:2.25rem;
+    --p-font:0.9rem;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    width:100% ;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0%;
+    left:0%;
+    background: #92C7F0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    height: 100px;
+    padding: 0 50px;
+    width: 100%;
+}
+
+.logo{
+    width : 150px;
+    height: 135px;
+}
+
+nav .logo img{
+    width :100%;
+    height: 100%;
+    object-fit: contain;
+    cursor:pointer;
+    margin: 7px 0;
+}
+
+.navbar-nav-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+ nav ul{
+    display: flex;
+    list-style: none;
+}
+
+
+nav ul li{
+    display: inline-block;
+    margin: 0 17px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    transition: transform 0.5s ease-in-out;
+
+}
+
+nav ul li a::after{
+    content:'' ;
+    width: 100%;
+    height: 2px;
+    background:#f26723;
+    display: block;
+    transition: transform 0.5s ease-in-out;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+
+nav ul li a:hover{
+    color: #f26723;
+}
+
+nav .icon i{
+    font-size: 18px;
+    color: #000000;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav .icon i:hover{
+    color:#f26723;
+}
+
+:root {
+    --main-color: #303D5B;
+    --text-color: #FFFFFF;
+    --bg-color: #ffffff;
+    --big-font: #000000;
+    --h2-font: 2.25rem;
+    --p-font: 0.9rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    background: #abb8c3;
+    box-shadow: 0 0 10px #00000080;
+    z-index: 1000;
+    height: 100px;
+    padding: 0 50px;
+}
+
+
+nav .logo img {
+    width: 150px;
+    height: 135px;
+}
+
+nav ul {
+    display:flex
+}
+
+.home{
+    width: 100%;
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+}
+
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem;
+}
+
+.logo img {
+	height: 60px;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+}
+
+nav ul li {
+	margin-left: 1rem;
+}
+
+nav ul li a {
+	color: #000000;
+	font-weight: 600;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+	color: #0693e3;
+}
+
+main {
+	margin-top: 150px;
+}
+
+
+ .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  h2 {
+    
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    align-items:left;
+  }
+
+  form {
+    top: 10%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto 0;
+    background-color: #d9d6d6;
+    
+    max-width: 1500px;
+    padding: 2rem;
+    border-radius: 40px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+
+
+  input {
+    padding: 0.8rem;
+    border-radius: 40px;
+    border: none;
+    margin-bottom: 1rem;
+    width: 100%;
+
+  }
+
+  button {
+    font-family: Poppins !important;
+    background-color: #ff6900;
+    color: white;
+    box-align: left;
+    margin-bottom: 0.8rem;
+    width:60%;
+    padding: 0.7rem;
+    border-radius: 40px;
+    border: none;
+
+  }
+
+  .previous{
+    width: 100%;
+  }
+
+  .btn-previous{
+    width: 20%;
+    background-color: #ff6900;
+  }
+
+  button:hover {
+    background-color: #768177;
+  }
+
+  .about {
+    text-align: center;
+    padding: 50px;
+    color: #FFFFFF;
+    margin-top: 0;
+}
+
+.about h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    margin-top: 0;
+}
+
+.about p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #fff;
+    margin-top: 0;
+}
+.banner{
+    text-align: center;
+    padding: 5px;
+    color: #FFFFFF;
+    margin-top: 0;
+}
+.container{
+    margin-top: 0;
+}
+
+#main{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_text h1{
+    font-size: 40px;
+}
+
+.main_images img{
+    width: 68%;
+    padding-top: 0%;
+}
+
+.image-accueil {
+  float: right; /* Place l'image à droite */
+  width: 200px; /* Ajuste la largeur de l'image à 100% du conteneur */
+  height: auto; /* Permet de conserver les proportions de l'image */
+  max-width: 800px; /* Définit une taille maximale pour l'image */
+}
+
+
+@media only screen and (max-width: 1800px) {
+    .main_images img{
+        width: 56%;
+        padding-top: 8%;
+    }
+}
+.main_images1 img{
+    width: 330px;
+    padding-top: 8%;
+}
+.text1 h1{
+    font-size: 50px;
+    color: #fac031;
+}
+.btn-log{
+    color: #000000;
+    font-size: large;
+}
+.btn-sig{
+    color: #000000;
+    font-size: large;
+}
+.text1 {
+    text-align: center;
+}
+.wrapper {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 500px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: center;
+  }
+
+.container {
+	margin: auto;
+    margin-top: 0%;
+	padding: 50px;
+    text-align: center;
+
+}
+
+
+h3 {
+	font-size: 30px;
+	margin-bottom: 50px;
+    text-align: center;
+}
+
+form {
+	display: inline-block;
+	text-align: left;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 18px;
+    color:#303D5B;
+    text-decoration: underline;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 2px solid #343a40;
+}
+
+input[type="submit"] {
+	background-color: #343a40;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+    border-radius: 40px;
+}
+
+input[type="submit"]:hover {
+	background-color: #C2348B;
+    border-radius: 40px;
+}
+
+
+
+  .login_choice{
+    width:30%;
+    margin:auto;
+  }
+
+  .btn-choice{
+    width:150%;
+    padding: 0% 30%;
+    display: block;
+    transform: translate(-122px);
+  }
+
+
+  body {
+    font-family: Poppins !important;
+  }
+
+  h1{
+    font-weight: bold;
+  }
+

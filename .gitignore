@@ -1,0 +1,45 @@
+# ===== Angular =====
+node_modules/
+dist/
+.angular/
+*.log
+
+# ===== Java / Spring Boot =====
+target/
+*.class
+*.jar
+*.war
+*.ear
+.mvn/wrapper/maven-wrapper.jar
+
+# ===== Python / Flask =====
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+*.sqlite3
+
+# ===== OS / IDE =====
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+__MACOSX/
+
+# ===== Large / binary files (PFE assets) =====
+*.mp4
+*.pbix
+*.xlsx
+*.xls
+*.csv
+*.zip
+*.rar
+*.7z
+
+# (optional) model/data artifacts
+*.joblib
+*.pkl
+*.h5

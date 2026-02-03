@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>Appareils de surveillance de la qualité de l'air intérieur</h1>
+
+  <ul class="nav nav-tabs">
+    <li class="nav-item" *ngFor="let group of groups">
+      <a class="nav-link" [ngClass]="{'active': group.id === selectedGroup}" (click)="selectGroup(group.id)">{{group.name}}</a>
+    </li>
+  </ul>
+
+  <div class="devices-list">
+    <div class="device-card" *ngFor="let device of filteredDevices">
+      <img src="{{device.image}}" alt="{{device.name}}">
+      <h2>{{device.name}}</h2>
+      <p>{{device.description}}</p>
+      <ul class="device-details">
+        <li style="font-weight:bold"><span>Prix en DT:</span> {{device.price}}</li>
+        <li style="font-weight:bold"><span>Connectivité:</span> {{device.connectivity}}</li>
+        </ul>
+      <button>Consultez votre Fournisseur</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,106 @@
+.image-accueil {
+  float: right; /* Place l'image à droite */
+  width: 500px; /* Ajuste la largeur de l'image à 100% du conteneur */
+  height: auto; /* Permet de conserver les proportions de l'image */
+  max-width: 500px; /* Définit une taille maximale pour l'image */
+  position: absolute;
+  top: 60px;
+  left: 200px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+
+}
+
+.main_images {
+  flex: 1;
+}
+
+.login-container-parent {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.login-container {
+  position: absolute;
+  top: 40px;
+  right: 200px;
+  
+}
+
+.signup {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.signup-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 15px;
+
+}
+
+.btn-signup-admin
+{
+  padding: 7px 60px;
+  text-align: center;
+  justify-content: center;
+}
+
+.role-label {
+  
+  margin-right: 10px;
+  color: #4A69FC;
+  text-decoration: underline;
+}
+
+.role-select {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #4A69FC;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.role-select:focus {
+  outline: none;
+  border-color: #4A69FC;
+  box-shadow: 0 0 0 2px #4A69FC;
+}
+.signup-buttons .btn-signup-admin  {
+  padding-right: 90px;
+  padding-left: 20px;
+}
+
+.error-message {
+  color: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  background-color: #f4433675; /* Rouge */
+  text-align:center;
+}
+
+/* Style pour le bouton de fermeture */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}

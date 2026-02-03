@@ -1,0 +1,169 @@
+<br>
+<section class="profile">
+  <div class="container">
+    <div class="profile-info">
+      <h2>Mon Profil</h2>
+      <div class="user-details">
+
+<div class="user-management">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        
+        <th>Rôle</th>
+        <th>Nom</th>
+        <th>Prénom</th>
+        <th>Email</th>
+        <th>Numéro de téléphone</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td >{{ user.id }}</td>
+
+        
+        <td>
+          <input *ngIf="false" [(ngModel)]="user.role" />
+          <span *ngIf="!false">{{ user.role }}</span>
+        </td>
+        <td>
+          <input *ngIf="false" [(ngModel)]="user.nom" />
+          <span *ngIf="!false">{{ user.nom }}</span>
+        </td>
+        <td>
+          <input *ngIf="false" [(ngModel)]="user.prenom" />
+          <span *ngIf="!false">{{ user.prenom }}</span>
+        </td>
+        <td>
+          <input *ngIf="false" [(ngModel)]="user.email" />
+          <span *ngIf="!false">{{ user.email }}</span>
+        </td>
+        <td>
+          <input *ngIf="false" [(ngModel)]="user.numero" />
+          <span *ngIf="!false">{{ user.numero }}</span>
+        </td>
+
+
+       
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <h2>Informations sur l'abonnement</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Type d'abonnement</th>
+        <th>Date d'activation</th>
+        <th>Statut de l'abonnement (actif/inactif)</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td >{{ abonnement.ida }}</td>
+
+
+        <td>
+          <input *ngIf="false" [(ngModel)]="abonnement.type" />
+          <span *ngIf="!false">{{ abonnement.type }}</span>
+        </td>
+        <td>
+          <input *ngIf="false" [(ngModel)]="abonnement.dateexp" />
+          <span *ngIf="!false">{{ abonnement.dateexp }}</span>
+        </td>
+        <td>
+          <input *ngIf="false" [(ngModel)]="abonnement.statut" />
+          <span *ngIf="!false">{{ abonnement.statut }}</span>
+        </td>
+
+
+
+
+        
+      </tr>
+    </tbody>
+  </table>
+
+  <br>
+  <h2>Mes Installations</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nom de l'appareil</th>
+        <th>Pièce</th>
+        <th>État</th>
+        <th>Batterie</th>
+        <th>Dernière mise à jour</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let installation of installations ; let i = index">
+        <td >{{ installation.idi }}</td>
+
+        <td>
+          <input *ngIf="false" [(ngModel)]="installation.nomapp" />
+          <span *ngIf="!false">{{ installation.nomapp }}</span>
+        </td>
+        <td>
+          <input *ngIf="false" [(ngModel)]="installation.piece" />
+          <span *ngIf="!false">{{ installation.piece }}</span>
+        </td>
+        <td>
+          <input *ngIf="false" [(ngModel)]="installation.etat" />
+          <span *ngIf="!false">{{ installation.etat }}</span>
+        </td>
+        <td>
+          <input *ngIf="false" [(ngModel)]="installation.batterie" />
+          <span *ngIf="!false">{{ installation.batterie }}</span>
+        </td>
+        <td>
+          <input *ngIf="false" [(ngModel)]="installation.dernieremise" />
+          <span *ngIf="!false">{{ installation.dernieremise }}</span>
+        </td>
+
+        
+      </tr>
+    </tbody>
+  </table>
+
+  <br>
+  <h2>Mes Données</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Polluant</th>
+        <th>Unités de Mesure</th>
+        
+       
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let donnees of donneess ; let i = index">
+        <td>{{ donnees.idd }}</td>
+
+        <td>
+          <input *ngIf="false" [(ngModel)]="donnees.polluant" />
+          <span *ngIf="!false">{{ donnees.polluant }}</span>
+        </td>
+        <td>
+          <input *ngIf="false" [(ngModel)]="donnees.unite" />
+          <span *ngIf="!false">{{ donnees.unite }}</span>
+        </td>
+        
+
+
+
+        
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
